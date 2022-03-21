@@ -9,8 +9,8 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
+import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useState } from "react/cjs/react.development";
 import Hero from "./components/Hero";
 import Desc from "./components/Desc";
 

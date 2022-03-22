@@ -33,11 +33,18 @@ function MainServices() {
         </Heading>
 
         <Flex
-          justify="space-between"
+          justify={{
+            base: "center",
+            lg: "space-between",
+          }}
+          align={{
+            base: "center",
+            lg: "space-between",
+          }}
           px="10%"
           textAlign="center"
           py="3%"
-          flexWrap="wrap"
+          flexDirection={["column", "column", "row", "row"]}
         >
           <Box width="150px" shadow="md" px="5px" py="25px">
             <IconButton
@@ -85,11 +92,15 @@ function MainServices() {
         </Flex>
         {/* 2nd Flex */}
         <Flex
+          align={{
+            base: "center",
+            lg: "space-between",
+          }}
           justify="space-between"
           px={["10%", "10%", "7%", "7%"]}
           textAlign="center"
           mt="40px"
-          flexWrap="wrap"
+          flexDirection={["column", "column", "row", "row"]}
         >
           <Box width="150px" shadow="md" px="5px" py="25px">
             <IconButton
@@ -138,9 +149,14 @@ function MainServices() {
         {/* 2nd Flex */}
         <Flex
           justify="space-between"
+          align={{
+            base: "center",
+            lg: "space-between",
+          }}
           textAlign="center"
           mt="40px"
           px={["10%", "10%", "30%", "30%"]}
+          flexDirection={["column", "column", "row", "row"]}
         >
           <Box width="150px" shadow="md" px="5px" py="25px">
             <IconButton

@@ -13,6 +13,8 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Hero from "./components/Hero";
 import Desc from "./components/Desc";
+import Services from "./components/Services";
+import MainServices from "./components/MainServices";
 
 export default function Home() {
   const [nav, setnav] = useState(false);
@@ -30,6 +32,10 @@ export default function Home() {
       <Box bg="#FFFFFF">
         <Stack mb="1%">
           <Flex
+            bgImage="/ground.png"
+            bgSize="90px"
+            bgPos="bottom left"
+            bgRepeat="no-repeat"
             justify={{
               base: "space-between",
               lg: "space-around",
@@ -65,7 +71,7 @@ export default function Home() {
           </Flex>
         </Stack>
 
-        <Box px="5%">
+        <Box>
           {/* Navbar Mobile*/}
           {nav ? (
             <ul className={styles.links}>
@@ -78,8 +84,13 @@ export default function Home() {
             </ul>
           ) : (
             <Box>
-              <Hero />
-              <Desc />
+              <Box px="5%">
+                <Hero />
+                <Desc />
+              </Box>
+
+              <Services />
+              <MainServices />
             </Box>
           )}
         </Box>

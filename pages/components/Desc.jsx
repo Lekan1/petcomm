@@ -15,7 +15,7 @@ import { GiSuspensionBridge } from "react-icons/gi";
 function Desc() {
   return (
     <>
-      <Box py="20px">
+      <Box py="100px">
         <Heading
           textTransform="uppercase"
           color="#393E46"

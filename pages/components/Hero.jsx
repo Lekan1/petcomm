@@ -13,7 +13,7 @@ function Hero() {
     <>
       <Box
         p="4%"
-        minH={{ base: "35vh", md: "20vh", lg: "100vh" }}
+        minH={{ base: "50vh", md: "60vh", lg: "100vh" }}
         backgroundImage={{ base: "none", lg: "/bm2.png" }}
         bgPos="center"
         bgRepeat="no-repeat"
